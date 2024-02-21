@@ -1,0 +1,139 @@
+/* Fonts */
+@font-face {
+  font-family: boy;
+  src: url(Early\ GameBoy.ttf);
+}
+@font-face {
+  font-family: o4b;
+  src: url(04B_30__.TTF);
+}
+@font-face {
+  font-family: rain;
+  src: url(rainyhearts.ttf);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* music */
+.music {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: -1%;
+}
+.album {
+  margin-top: 1.5%;
+  border-radius: 15px;
+  position: relative;
+  border: 8px double #f8e0fa;
+  width: 450px;
+  /* object-fit: cover; */
+}
+.music .albumpic {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+.music .albumpic img {
+  height: 100%;
+  /* object-fit: cover; */
+  /* width: 100%; */
+}
+
+/* Html */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Song Section */
+.song {
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  color: #fce9fe;
+  background-color: #9c5555;
+  /* border: 5px dashed white; */
+}
+.song::before {
+  content: "";
+  background-image: url(Picsart_24-02-17_03-32-23-548.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 35%;
+  filter: blur(2px);
+}
+.song::after {
+  content: "";
+  background-color: #a997df;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 45%;
+  mix-blend-mode: color-burn;
+}
+
+audio {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Texts */
+body {
+  text-align: center;
+}
+h1 {
+  font-family: o4b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 380%;
+  -webkit-text-stroke: 0.001px #d095d0;
+}
+h3 {
+  font-family: boy;
+  -webkit-text-stroke: 0.05px #d095d0;
+}
+p {
+  font-family: rain;
+  font-size: 150%;
+  padding-bottom: 1.5%;
+  -webkit-text-stroke: 0.8px #d095d0;
+}
+
+/* Test for now */
+/* .why {
+  background-color: aquamarine;
+} */
+
+/* .border {
+  position: relative;
+}
+
+.border::before {
+  content: "";
+  padding: 1.5rem;
+  flex: 1;
+  background-color: #fce9ff;
+  border-radius: 10rem;
+  border: 0.2rem dashed;
+  border-color: #b72323ee;
+  text-align: center;
+  opacity: 50%;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-top-left-radius: 450px;
+  border-top-right-radius: 450px;
+  border-bottom-left-radius: 450px;
+  border-bottom-right-radius: 450px;
+  position: absolute;
+} */
